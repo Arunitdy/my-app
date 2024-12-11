@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import "./Chef.css";
  const Chef=()=>{
     const[inputValue,setinputValue]=useState("");
-    const[list,setlist]=useState([""]);
+    const[list,setlist]=useState([]);
     
     const handleSearch=(event)=>{
         event.preventDefault();
