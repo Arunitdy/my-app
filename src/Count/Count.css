@@ -1,0 +1,11 @@
+.count{
+    display: flex;
+}
+.count button{
+    width:150px;
+    border-radius: 20px;
+
+}
+.count div{
+    font-size: 40px;
+}
