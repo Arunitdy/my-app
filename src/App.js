@@ -1,10 +1,10 @@
 // App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import Login from './components/Login';
-import Profile from './components/Profile';
-import Chef from './components/Chef';
-import Count from './components/Count';
+import Login from './login';
+import Profile from './profile/Profile';
+import Chef from './Chef/Chef';
+import Count from './Count/Count';
 
 function App() {
   return (
