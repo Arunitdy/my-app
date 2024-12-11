@@ -1,0 +1,32 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 20px;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .star {
+    width: 0px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: gold;
+  }
+  
+  .star:hover {
+    transform: scale(1.1);
+}
+  
+  .phone,
+  .email {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
