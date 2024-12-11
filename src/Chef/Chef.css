@@ -1,0 +1,11 @@
+.Chef{
+    padding: 20px;
+}
+.logo{
+    width: 100px;
+    border-radius:40px;
+}
+.navbar{
+    display: flex;
+    margin: 20px;
+}
