@@ -33,9 +33,9 @@ import "./Chef.css";
         </form>
         <h2>Ingredients:</h2>
         <ul>
-            {list.map((item,index)=>{
+            {list.map((item,index)=>(
                 <li key={index}>{item}</li>
-            })}
+            ))}
         </ul>
 
     </div>);
