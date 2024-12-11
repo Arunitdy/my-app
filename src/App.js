@@ -12,8 +12,8 @@ function App() {
         <Chef/>
 
         <Count/>
-        */
-        <Profile/>
+        
+        <Profile/>*/
         }
     </div>
   );
