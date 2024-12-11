@@ -37,7 +37,7 @@
     margin-right: 2px;
   }
   
-  .login-container  button {
+  button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -47,7 +47,7 @@
     cursor: pointer;
   }
   
-  .login-container button:hover {
+  button:hover {
     background-color: #0056b3;
   }
   
