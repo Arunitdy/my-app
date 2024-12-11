@@ -1,26 +1,38 @@
-
-// components/Profile.js
-import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import './Profile.css';
+import React, { useState } from "react";
+import "./Profile.css";
 
 const Profile = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const { email, password } = location.state || {};
+  const [info, setInfo] = useState({
+    name: "John Doe",
+    email: "johndoe@example.com",
+    phone: "123-456-7890",
+    star: true, 
+  });
+
+  const handleStar = (event) => {
+    event.preventDefault();
+    setInfo((prevInfo) => ({
+      ...prevInfo,
+      star: !prevInfo.star, 
+    }));
+  };
+
+  const { name, email, phone, star } = info;
 
   return (
-    <div className="profile">
+    <form className="profile">
       <img
         alt="profile img"
         src="https://via.placeholder.com/150"
         className="profile-img"
       />
-      <h3>Email: {email}</h3>
-      <p>Password: {password}</p>
-      <button onClick={() => navigate('/chef')}>Go to Chef</button>
-      <button onClick={() => navigate('/count')}>Go to Count</button>
-    </div>
+      <button className="star" onClick={handleStar}>
+        {star ? "★" : "☆"}
+      </button>
+      <h3>{name}</h3>
+      <div className="phone">{phone}</div>
+      <div>{email}</div>
+    </form>
   );
 };
 

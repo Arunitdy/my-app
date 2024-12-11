@@ -1,17 +1,14 @@
-
-// components/Login.js
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './login.css';
+import React, { useState } from "react";
+import './login.css';  
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
 
-  function handleSubmit(event) {
+  function  handleSubmit(event){
     event.preventDefault();
-    navigate('/profile', { state: { email, password } });
+    // Handle form submission, such as sending the login request to an API.
+    console.log("Login submitted with", { email, password });
   }
 
   return (
